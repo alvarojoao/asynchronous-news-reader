@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>SuitSupply</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<link rel="stylesheet" href="./css/style.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="bar-settings">
+				<div class="search field">
+					<label class="ps-frm-lbl">Search field:</label> 
+
+				 	<input class="ps-frm-entry" placeholder="Search field:"  id="search-field" type="text" onkeyup="search(this,event)" />
+				</div>
+				<div class="field publishedDate">
+					
+					<label class="ps-frm-lbl">Filter by Published Date:</label> 
+
+					<div class="ps-frm-select">
+						<select name="publishedDate" id="publishedDate" onchange="publishedDateFilter(this)">
+						</select>
+					</div>
+				</div>
+				<div class="field showRelated">
+					<input type="checkbox" class="ps-frm-checkbox" onchange="showRelated(this)"  name="showRelated" id="showRelated" /> 
+					<label class="ps-frm-checkbox" for="showRelated">Show related</label>
+				</div>
+				<div class="field size">
+					<label class="ps-frm-lbl">Number of Itens per Page:</label> 
+					<div class="ps-frm-select">
+						<select name="itens" id="size" onchange="showNumberItens(this)">
+							<option value="1">1</option>
+							<option value="3">3</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="field removeFilter">
+					<button class="ps-btn" onclick="removeFilter()">Remove Filters</button>
+				</div>
+			</div>
+			<div class="list" id="list">
+				
+			</div>
+			<div class="pagination" id="pagination">
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/build/bind.js"></script>
+
+	<!--<script type="text/javascript" src="js/util/loadJson.js"></script>
+	<script type="text/javascript" src="js/view/Pagination.js"></script>
+	<script type="text/javascript" src="js/view/Story.js"></script>
+	<script type="text/javascript" src="js/view/Load.js"></script>
+	<script type="text/javascript" src="js/controller/Story.js"></script>
+	-->
+</html>
