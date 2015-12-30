@@ -179,6 +179,10 @@ body,header{
 
 /*media queries*/
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .list div:first-child:last-child .article {
+          width: 99%;}
+  .list div:first-child:last-child .article .thumbnail {
+          width: 99%;}
   .field{
     padding:5px;
   }
