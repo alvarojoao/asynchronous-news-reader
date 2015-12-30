@@ -75,7 +75,7 @@ body,header{
   float: left;
   display: block;
   width: 100%;
-  padding:5px 5px;
+  padding:5px 0 5px 5px;
 }
 .field.publishedDate label{
     white-space: nowrap;
@@ -161,20 +161,28 @@ body,header{
 }
 .pagination ul{
   float: left;
+  padding: 0; 
 }
 .pagination ul li.active{
   cursor: none;
   color:black;
+  background-color: #006e99;
 }
 .pagination ul li{
   display: inline-block;
   padding: 1em;
   cursor: pointer;
-  color:blue;
+  color: blue;
+  background-color: #b9b9b9;
+  margin-left: 1px;
 }
 
 /*media queries*/
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .field{
+    padding:5px;
+  }
+
   .bar-settings .search label{
     display: block;
   }
