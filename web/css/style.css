@@ -103,6 +103,7 @@ body,header{
 .open-box{
   opacity: 1;
   height: auto;
+  padding: 10px;
 }
 
 .list{
@@ -116,6 +117,12 @@ body,header{
 .list .article img{
   width: 100%;
 }
+.list .article .box small.publisher{
+  width: 100%;
+  display: block;
+}
+
+
 .list .article .publishedDate,.list .article .url ,.list .article .content{
   float: left;    
   width: 100%;
@@ -186,7 +193,10 @@ body,header{
   .field{
     padding:5px;
   }
-
+  .list div:first-child:last-child .article .box  img{
+    width: 50em;
+  }
+  
   .bar-settings .search label{
     display: block;
   }
