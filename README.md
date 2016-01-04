@@ -1,2 +1,2 @@
-# SuitSupply-project1
-Project one for front-end test
+# front-end-example
+Full asynchronous web application, JSON consumer.
